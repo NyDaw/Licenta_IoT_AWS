@@ -37,7 +37,7 @@
         force: yes
       become_user: ubuntu
 
-    - name: 6. Pornire Broker MQTT (Mosquitto) cu Docker-Compose
-      command: docker-compose up -d
+    - name: 6. Pornire Broker MQTT si Web App
+      shell: "docker-compose down && docker-compose up -d --build"
       args:
         chdir: /home/ubuntu/licenta_iot/docker
