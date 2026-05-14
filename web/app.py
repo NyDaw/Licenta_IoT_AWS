@@ -6,7 +6,7 @@ app = Flask(__name__)
 ultima_temperatura = "--"
 
 # Setari Broker MQTT
-BROKER_IP = "127.0.0.1" # Sau IP-ul de AWS, ambele variante sunt corecte acum
+BROKER_IP = "broker_mqtt"
 PORT = 1883
 TOPIC_TEMP = "licenta/temperatura"
 
