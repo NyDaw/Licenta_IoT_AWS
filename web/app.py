@@ -6,7 +6,7 @@ app = Flask(__name__)
 ultima_temperatura = "--"
 
 # Setari Broker MQTT
-BROKER_IP = "3.75.213.20"
+BROKER_IP = "127.0.0.1" # Sau IP-ul de AWS, ambele variante sunt corecte acum
 PORT = 1883
 TOPIC_TEMP = "licenta/temperatura"
 
@@ -41,4 +41,4 @@ if __name__ == '__main__':
     thread_mqtt.start()
     
     # Pornim site-ul web pe portul 5000
-    app.run(debug=True, port=5000, use_reloader=False)
+    app.run(host='0.0.0.0', debug=True, port=5000, use_reloader=False)

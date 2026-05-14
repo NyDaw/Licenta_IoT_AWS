@@ -7,3 +7,11 @@ services:
     ports:
       - "1883:1883"
       - "9001:9001"
+
+  web_app:
+    build: ../web                 # Îi spune să construiască imaginea folosind Dockerfile-ul de la Pasul 1
+    container_name: flask_licenta
+    ports:
+      - "5000:5000"               # Leagă portul 5000 al serverului de aplicație
+    depends_on:
+      - broker_mqtt               # Site-ul pornește doar după ce broker-ul este gata
