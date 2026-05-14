@@ -3,7 +3,7 @@ import time
 import random
 
 # Setari Broker MQTT (Acum e local, cand il mutam pe AWS, schimbam doar IP-ul aici)
-BROKER_IP = "127.0.0.1"  # localhost, pentru ca ruleaza pe laptopul tau in Docker
+BROKER_IP = "3.75.213.20"  # localhost, pentru ca ruleaza pe laptopul tau in Docker
 PORT = 1883
 TOPIC_TEMP = "licenta/temperatura"
 

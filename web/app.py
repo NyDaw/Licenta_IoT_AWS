@@ -6,7 +6,7 @@ app = Flask(__name__)
 ultima_temperatura = "--"
 
 # Setari Broker MQTT
-BROKER_IP = "127.0.0.1"
+BROKER_IP = "3.75.213.20"
 PORT = 1883
 TOPIC_TEMP = "licenta/temperatura"
 

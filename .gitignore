@@ -12,3 +12,5 @@ __pycache__/
 # Ignorăm fișierele de sistem (Mac/Windows)
 .DS_Store
 Thumbs.db
+
+*.pem
