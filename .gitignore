@@ -1,0 +1,14 @@
+# Ignorăm fișierele generate de Terraform care pot conține date sensibile
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+.terraform.lock.hcl
+
+# Ignorăm fișierele temporare de Python
+__pycache__/
+*.pyc
+
+# Ignorăm fișierele de sistem (Mac/Windows)
+.DS_Store
+Thumbs.db

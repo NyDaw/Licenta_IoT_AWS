@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  broker_mqtt:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto_licenta
+    ports:
+      - "1883:1883"
+      - "9001:9001"
